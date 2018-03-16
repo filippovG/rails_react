@@ -19,8 +19,9 @@ Hello.propTypes = {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  const name = document.getElementById('greeting-name').value
   ReactDOM.render(
-    <Hello name="React" />,
+    <Hello name={name} />,
     document.body.appendChild(document.createElement('div')),
   )
 })
